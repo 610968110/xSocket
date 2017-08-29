@@ -80,9 +80,7 @@ xSocket
       
       @Override 
       
-      public void onServiceConnected(SocketService socketService) {
-      
-            }      
+      public void onServiceConnected(SocketService socketService) {}      
             
             //服务时调用           
             
