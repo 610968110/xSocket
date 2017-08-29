@@ -4,6 +4,15 @@ xSocket
 
  xSocket使用说明：所有方法回调都运行在主线程,支持一个服务端连接多个客户端,客户端支持断掉重连（包括断网重连），服务端断网不会通知客户端重新连接，但会重启服务，客户端需要手动重新连接。
  
+ 一、引用库
+    maven {
+            url "https://raw.githubusercontent.com/610968110/xSocket/master"
+        }
+
+   app的build里添加：compile 'tcom.maven-liboxin:xSocket:1.0'
+ 
+
+二、使用说明
  
  1.需要权限（必须）    
  
