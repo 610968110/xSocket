@@ -72,15 +72,15 @@ xSocket
  
    5.1打开服务  
    
-      //上下文，监听端口，回调 
+          //上下文，监听端口，回调 
       
-      ServiceManager.getInstance().startService(this, 8081, new ServiceConnectCallback() {     
+        ServiceManager.getInstance().startService(this, 8081, new ServiceConnectCallback() {     
       
-      //绑定服务时调用   
+           //绑定服务时调用   
       
-      @Override 
+            @Override 
       
-      public void onServiceConnected(SocketService socketService) {}      
+            public void onServiceConnected(SocketService socketService) {}      
             
             //服务时调用           
             
