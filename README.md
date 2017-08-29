@@ -1,13 +1,13 @@
 # xSocket
-xSocket
- xSocket使用说明：所有方法回调都运行在主线程,支持一个服务端连接多个客户端,客户端支持断掉重连（包括断网重连），服务端断网不会通知客户端重新连接，但会重启服务，客户端需要手动重新连接
- 1.需要权限（必须）
-      <uses-permission android:name="android.permission.INTERNET" />    
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    
-      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />    
-      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    
-      <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />  
- 2.若使用服务端，需要注册服务（可选） 
+xSocket     
+ xSocket使用说明：所有方法回调都运行在主线程,支持一个服务端连接多个客户端,客户端支持断掉重连（包括断网重连），服务端断网不会通知客户端重新连接，但会重启服务，客户端需要手动重新连接     
+ 1.需要权限（必须）     
+      <uses-permission android:name="android.permission.INTERNET" />         
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />         
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />        
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />         
+      <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />       
+ 2.若使用服务端，需要注册服务（可选）      
       <service android:name="com.lbx.socket.service.SocketService" />  
  3.初始化（必须）  
       SocketManager manager = SocketManager.init(this)    //当客户端成功连接到服务端，服务端向客户端发送的连接成功的消息    
