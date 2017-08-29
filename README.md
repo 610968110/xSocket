@@ -86,39 +86,25 @@ xSocket
             
             @Override            
             
-            public void onServiceDisconnected(ComponentName name) {
-            
-            }      
+            public void onServiceDisconnected(ComponentName name) {}      
             
             //客户端连接上时调用   
             
             @Override           
             
-            public void onClientConnected(Socket client) {                
-            
-            super.onClientConnected(client);            
-            
-            }      
+            public void onClientConnected(Socket client) {super.onClientConnected(client);}      
             
             //客户端断开时调用（与客户端没断开时就关闭服务也会回调此方法，这时client参数为null，所有客户端全部掉线）            
             
             @Override     
             
-            public void onClientDisconnected(Socket client) {                
-            
-            super.onClientDisconnected(client);            
-            
-            }      
+            public void onClientDisconnected(Socket client) {super.onClientDisconnected(client);}      
             
             //收到客户端消息时调用，进行再主线程            
             
             @Override            
             
-            public void onServiceReceiver(String msg) {                
-            
-            Log.e(TAG, "onServiceReceiver = " + msg);           
-            
-            }        
+            public void onServiceReceiver(String msg) {Log.e(TAG, "onServiceReceiver = " + msg);}        
             
             });    
             
