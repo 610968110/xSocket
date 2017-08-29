@@ -32,7 +32,9 @@ xSocket
       
  3.初始化（必须）  
  
-      SocketManager manager = SocketManager.init(this)    //当客户端成功连接到服务端，服务端向客户端发送的连接成功的消息    
+      SocketManager manager = SocketManager.init(this)    
+      
+      //当客户端成功连接到服务端，服务端向客户端发送的连接成功的消息    
       
       //null或""为不发送，默认不发送                
       
